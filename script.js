@@ -18,12 +18,13 @@ function save(){
 
     var item = document.getElementById("input").value;
     localStorage.setItem("storedItem", item);
-    document.getElementById("savedMessage").innerHTML = item + " SAVED";
+    if(item != "")
+        document.getElementById("savedMessage").innerHTML = item + " SAVED";
 }
 
 function getItem() {
 
     localStorage.getItem("storedItem");
-    if(storedItem != null)
+    if(storedItem != "")
         document.getElementById("openedMessage").innerHTML = storedItem + " OPENED";
 }
