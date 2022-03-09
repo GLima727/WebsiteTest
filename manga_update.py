@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-from flask import Flask
 
 def TokyoRevengers():
     tokyo_revengers = requests.get("https://tokyorevengersmanga.com/")
@@ -20,3 +19,4 @@ def TokyoRevengers():
 
     f.close()
 
+TokyoRevengers()
