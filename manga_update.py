@@ -18,5 +18,4 @@ def TokyoRevengers():
         print("No new Tokyo Revengers chapter :(")
 
     f.close()
-
 TokyoRevengers()
