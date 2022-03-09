@@ -24,5 +24,6 @@ function save(){
 function getItem() {
 
     localStorage.getItem("storedItem");
-    document.getElementById("openedMessage").innerHTML = storedItem + " OPENED";
+    if(storedItem != null)
+        document.getElementById("openedMessage").innerHTML = storedItem + " OPENED";
 }
