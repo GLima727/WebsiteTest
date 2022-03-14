@@ -1,0 +1,47 @@
+
+body{
+  height: 100%;
+  margin: 0;
+}
+.waves-container{
+    margin-top: 200px;
+}
+div.waves{
+  width: 100%;
+  bottom: 0;
+  /*height: 100%;*/
+  position: absolute;
+  z-index: 99;
+}
+.header{
+  font-family: sans-serif;
+  text-align: center;
+  color: #f3f3f3;
+}
+.header h2{
+  background: linear-gradient(90deg, #00b4db 0%, #224488 50%, #0083b0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+.header a{
+  text-decoration: none;
+  background: linear-gradient(90deg, #00b4db 0%, #224488 50%, #0083b0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
+svg{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
