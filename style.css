@@ -2,11 +2,13 @@
 
 body{
   margin: 0;
+  background-color:cornsilk;
 }
 .header{
   width: 100vw;
   height: 65px;
-  font-family: 'Quicksand', sans-serif;
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 40px;
   text-align: justify;
@@ -20,7 +22,10 @@ body{
 }
 .header div{
   padding: 0px;
-  border: 7px solid #dd7e01;
+  border: 0px solid #dd7e01;
+  border-radius: 20px;
+
+  background-color: cornsilk;
 }
 .headerText{
   line-height: 1.5em;
@@ -28,9 +33,10 @@ body{
 }
 .container {
   width: 100vw;
-  height: 68vh;
+  height: 92.5vh;
 
-  font-family: 'Quicksand', sans-serif;
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 20px;
 
@@ -54,9 +60,11 @@ body{
   background-color: #f0a676; /* Used if the image is unavailable */
   background-image: url("poke.png");
   background-position: center; /* 50% 50% */
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   padding: 0px;
-  border: 7px solid #ee8206;
+  border: 0px solid #ee8206;
+  border-radius: 20px;
   overflow-wrap: break-word;
   font-size: 35px;
 }
@@ -67,7 +75,8 @@ body{
   grid-column: 12 / span 5;
   color: rgb(240, 111, 111);
   padding: 0px;
-  border: 5px solid #ee8206;
+  border: 0px solid #ee8206;
+  border-radius: 20px;
   font-size: 26px;
   background-color: rgb(133, 126, 119);
 }
@@ -84,14 +93,17 @@ body{
 .footer{
  text-align:start;
  line-height: 1.7em;
- font-family:"Lucida Console", Courier, monospace;
+ /*font-family:"Lucida Console", Courier, monospace;*/
+ font-family: 'Roboto', sans-serif;
  font-size: 24px;
  letter-spacing: normal;
  padding: 20px;
  color: rgb(240, 111, 111);
+ background-color: aquamarine;
   grid-column: 1 / 12;  /* means column start 3 colum end 4 */
   padding: 0px;
-  border: 7px solid #ee8206;
+  border: 0px solid #ee8206;
+  border-radius: 20px;
 }
 
 .block {
@@ -100,10 +112,12 @@ body{
     background-color: #f5ac0e;
     padding: 14px 28px;
     font-size: 30px;
-    font-family:"Lucida Console", Courier, monospace;
+    /*font-family:"Lucida Console", Courier, monospace;*/
+    font-family: 'Roboto', sans-serif;
     color: rgb(240, 111, 111);
     cursor: pointer;
     text-align: center;
+    border-radius: 20px;  
 
 }
 input
@@ -114,6 +128,7 @@ input
  Background-color:rgb(255, 255, 255);
  Font-size:50px; 
  padding: 1%;
+ border-radius: 20px;
 
  }
 
