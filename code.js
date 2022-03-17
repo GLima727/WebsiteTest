@@ -83,8 +83,8 @@ function receivePlayerName(){
         document.getElementById("button1").style.display = "none"; /*deletes the buttons */
         document.getElementById("nameInput").style.display = "none";
 
-        document.getElementById("gameText").innerHTML = "<l> WELCOME TO THE GAME <span style='color: rgb(30, 188, 216);font-family: cursive'>" 
-                                                        + playerName +"</span>!<br/> YOU THINK YOU TOUGH?<l/><p> WELL YA AINT </p>"
+        document.getElementById("gameText").innerHTML = "<l> Welcome <span style='color: #8d99ae;text-decoration:underline;font-weight:bold'>" 
+                                                        + playerName +"</span>!<br/> Please choose your starter.<l/>"
     }
 }
 const player = new Player();
