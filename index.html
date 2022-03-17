@@ -5,52 +5,189 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>DARMAN PRODUCTIONS PRESENTS: DARRRREEMANNNN</title>
-
-
-    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Codeconvey" /> 
 
     <script src="code.js"></script>     
     <script src="script.js"></script>  
-    
+   <style>
+    body{
+      margin: 0;
+   }
+   .header{
+      width: 100vw;
+      height: 65px;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+      text-align: justify;
+      text-decoration:solid;
+   
+      display: grid;
+   
+      grid-template: 1fr / 1fr;
+      padding: 0px;
+      box-sizing: border-box;
+   }
+   .header div{
+      padding: 0px;
+      border: 7px solid #dd7e01;
+   }
+   .headerText{
+      line-height: 1.5em;
+      color: rgb(201, 82, 46);
+   }
+   .container {
+      width: 100vw;
+      height: 68vh;
+   
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+   
+   
+      display: grid;
+   
+      grid-template-columns: repeat(16, 1fr) ;
+      grid-template-rows: 1fr 1fr 50px; /* grid-template: 50px 1fr 1fr 100px / repeat(3, 1fr) */
+   
+      gap: 0px;
+   
+      padding: 0px;
+      box-sizing: border-box;
+   }
+   
+   .gameText{
+      grid-column: 1 / 12;
+      grid-row: 1 / span 2;
+      color: rgb(240, 111, 111);
+      line-height: 1.5em;
+      background-color: #f0a676; /* Used if the image is unavailable */
+      background-image: url("poke.png");
+      background-position: center; /* 50% 50% */
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      padding: 0px;
+      border: 7px solid #ee8206;
+      overflow-wrap: break-word;
+      font-size: 35px;
+   }
+   
+   .menu{
+     line-height: 2em;
+      grid-row: 1 / span 3;
+      grid-column: 12 / span 5;
+      color: rgb(240, 111, 111);
+      padding: 0px;
+      border: 5px solid #ee8206;
+      font-size: 26px;
+      background-color: rgb(133, 126, 119);
+   }
+   .menuText{
+      width: 424px;
+      padding: 5px;
+      height: 30vw;
+      position: relative; /* moves text up wooow */
+      bottom: 30px;
+      color: rgb(30, 188, 216);
+      
+   }
+   
+   .footer{
+     text-align:start;
+     line-height: 1.7em;
+     font-family:"Lucida Console", Courier, monospace;
+     font-size: 24px;
+     letter-spacing: normal;
+     padding: 20px;
+     color: rgb(240, 111, 111);
+      grid-column: 1 / 12;  /* means column start 3 colum end 4 */
+      padding: 0px;
+      border: 7px solid #ee8206;
+   }
+   
+   .block {
+        width: 523px;
+        border: 1px;
+        background-color: #f5ac0e;
+        padding: 14px 28px;
+        font-size: 30px;
+        font-family:"Lucida Console", Courier, monospace;
+        color: rgb(240, 111, 111);
+        cursor: pointer;
+        text-align: center;
+   
+   }
+   input
+     {
+     Width:500px;
+     height:40px;
+     Color:rgb(255, 102, 0);
+     Background-color:rgb(255, 255, 255);
+     Font-size:50px; 
+     padding: 1%;
+   
+     }
+   
+     p { margin: 15px }
+   
+   </style>
+
 </head>
 
 <body >
    
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+<div class="waves-container">
+  <div class="waves">
+   <svg width="100%" height="230px" fill="full" version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+         <stop offset="5%" stop-color="#EC5F41" />
+         <stop offset="50%" stop-color="#F38931" />
+         <stop offset="100%" stop-color="#FFB85E" />
+      </linearGradient>
+      
+      <path fill="url(#grad1)" d="M0 67 C 273,183 822,-40 1920.00,106 V 359 H 0  V 67 Z">
+         <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML" values="M0 77  C 473,283 822,-40 1920,116  V 359 H 0  V 67 Z; M0 77 C 473,-40 1222,283 1920,136  V 359 H 0 V 67 Z; M0 77 C 973,260 1722,-53 1920,120  V 359  H 0  V 67  Z; M0 77 C 473,283 822,-40 1920,116 V 359 H 0 V 67 Z">
+         </animate>
+      </path>
+   </svg>
+
+   
+   </div>
+</div>	
+
+            </div>
+         </div>
+      </div>
+
+</section>
    <div class="header"> 
-      <div class="headerText"> 
-         <p>POKEMON GAME</p>
-      </div>
-         <div class="headerMenu">
-            <p id="headerMenuText"> </p>
-      </div>
+      <div class="headerText"> POKEMON GAME</div>
    </div>
 
 <div class="container"> 
-   <div class="gameBox">
-      <div class="gameText">
-         <div class="startMenu">
-            <p id="startMenu"> Choose your name to start!</p> 
-            
-            <br/>
-            <input type="name" name="name" id="nameInput" class="form__input" placeholder="|"/>
-            <br/>
-            <button onclick="receivePlayerName()" id ="button1" class="button1" >Start</button>
-            <br/>
-            <p id="nameInputError" style="color:#ad2831; text-align: center;"></p>
-         </div>
-      </div>
+   <div class="gameText">
+      <p id="gameText"> OMG I AM JUICED JOE. JOE MAMA. HE SAID CALMLY.<br/> NOW CHOOSE YA MAFAKEN NAME BITCH</p> 
+      <input type="name" name="name" id="nameInput" class="form__input" placeholder="Enter the Player name"/>
+      <br/>
+      <button onclick="receivePlayerName()" id ="button1" class="block" >CLICK TO ACCEPT NAME!</button>
+      
 
    </div>
 
    <div class="menu"> 
       <div class="menuText">
-         <p id="menuText"></p>
+         <p id="menuText">joe... it cant be</p>
  
       </div>
 
    </div>
 
-   <div class="footer"> work in progress since 10/3/22</div>
+   <div class="footer"> if switching my b's for v's makes me russian then soviet</div>
 
 </div>
 

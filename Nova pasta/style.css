@@ -1,0 +1,221 @@
+body{
+  margin: 0;
+  background-color:#edf2f4;
+}
+.header{
+  width: 100vw;
+  height:204px;
+  /*font-family: 'Quicksand', sans-serif;*/
+
+  display: grid;
+  /*overflow:auto;*/
+  grid-template: 1fr / repeat(16, 1fr);
+  padding: 0px;
+
+  
+}
+.header div{
+  padding: 0px;
+  border-radius: 20px;
+
+  /*background-color: #ffcc9f;*/
+}
+.headerText{
+  line-height: 1.35em;
+  color: #d90429;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 140px;
+  text-align: justify;
+  text-decoration:solid;
+  text-decoration: underline overline;
+  grid-column: 1 / 13;
+  text-align: center;
+}
+.headerMenu{
+  grid-column: 13/18;
+  background-color: #98c1d9;
+  border: 10px #003049;
+  border-style: solid;
+  border-radius: 20px;
+  position:relative;
+}
+/*.header:hover{
+  transform: scaleY(1.5);
+  transform-origin: bottom;
+  margin-top: 30px;
+
+  
+}
+.header:hover p{
+  transform: scaleY(0.66);
+  font-size: 70px;
+  line-height: -1px;
+}*/
+.headerMenu{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #003049;
+}
+.container {
+  width: 100vw;
+  height: 78.2vh;
+  overflow:auto;
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  
+
+  display: grid;
+
+  grid-template-columns: repeat(16, 1fr) ;
+  grid-template-rows: 1fr 1fr 50px; /* grid-template: 50px 1fr 1fr 100px / repeat(3, 1fr) */
+
+  gap: 0px;
+
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.gameBox{
+  grid-column: 1 / 13;
+  grid-row: 1 / span 2;
+  line-height: 2.6em;
+  /*background-color: #f0a676;  Used if the image is unavailable */
+  /*background-image: url("poke2.png");*/
+  /*background-position: center;  50% 50% */
+  
+
+}
+.gameText{
+  /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 65px;
+  color: #003049;
+  /*      typing 1s steps(20, end) forwards,
+      blink .8s infinite;*/
+}
+.startMenu {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-size: 65px;
+  color: #003049;
+  text-align: center;
+  overflow: hidden;
+  border-right: .1em solid #003049;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s forwards;
+}
+.menu{
+ line-height: 2em;
+  grid-row: 1 / 4;
+  grid-column: 13 / span 5;
+  color: #003049;
+  padding: 0px;
+  border: 0px solid #003049;
+  border-radius: 20px;
+  font-size: 26px;
+  background-color: #98c1d9;
+}
+.menuText{
+  width: 424px;
+  padding: 5px;
+  height: 30vw;
+  position: relative; /* moves text up wooow */
+  bottom: 30px;
+  color: #003049;  ;
+  
+}
+
+.footer{
+ text-align:start;
+ line-height: 1.7em;
+ /*font-family:"Lucida Console", Courier, monospace;*/
+ font-family: 'Roboto', sans-serif;
+ font-size: 24px;
+ letter-spacing: normal;
+ padding: 20px;
+ color: #003049;;
+ background-color: #fcbf49;
+  grid-column: 1 / 13;  /* means column start 3 colum end 4 */
+  padding: 0px;
+  border: 0px solid #003049;;
+  border-top-right-radius: 20px;
+}
+
+.button1 {
+    width: 195px;
+    text-decoration: underline;
+    border: 0px;
+    background: none;
+    /*padding: 14px 28px;*/
+    font-size: 80px;
+    font-weight: bold;
+    /*font-family:"Lucida Console", Courier, monospace;*/
+    font-family: 'Roboto', sans-serif;
+    color: #003049;
+    cursor: pointer;
+    text-align: center;
+
+}
+#nameInput
+ {
+ Width:500px;
+ height:40px;
+ Color:#003049;
+ Background-color:#98c1d9;
+ Font-size:50px; 
+ padding: 1%;
+ border-radius: 20px;
+ border:0px;
+ border-color: #d1e6f1;
+
+ }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #003049;
+  opacity: 1; /* Firefox */
+}
+
+ p { margin: 15px }
+
+
+
+ .typed-out{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: 0;
+  animation: typing 1s forwards;
+} 
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: #003049; }
+}
+
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+    transform: rotateX(40deg);
+  }
+
+  100%{
+    display: none;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
