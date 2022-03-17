@@ -4,7 +4,7 @@ body{
 }
 .header{
   width: 100vw;
-  height:21.8vh;
+  height:204px;
   /*font-family: 'Quicksand', sans-serif;*/
 
   display: grid;
