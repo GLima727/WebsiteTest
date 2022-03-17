@@ -11,6 +11,7 @@ body{
   /*overflow:auto;*/
   grid-template: 1fr / repeat(16, 1fr);
   padding: 0px;
+
   
 }
 .header div{
@@ -29,6 +30,7 @@ body{
   text-decoration:solid;
   text-decoration: underline overline;
   grid-column: 1 / 13;
+  text-align: center;
 }
 .headerMenu{
   grid-column: 13/18;
@@ -50,7 +52,12 @@ body{
   font-size: 70px;
   line-height: -1px;
 }*/
-
+.headerMenu{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #003049;
+}
 .container {
   width: 100vw;
   height: 78.2vh;
@@ -59,7 +66,7 @@ body{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 20px;
-
+  
 
   display: grid;
 
@@ -78,29 +85,31 @@ body{
   line-height: 2.6em;
   /*background-color: #f0a676;  Used if the image is unavailable */
   /*background-image: url("poke2.png");*/
-  background-position: center; /* 50% 50% */
+  /*background-position: center;  50% 50% */
   
 
 }
 .gameText{
   /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 65px;
+  color: #003049;
+  /*      typing 1s steps(20, end) forwards,
+      blink .8s infinite;*/
+}
+.startMenu {
   font-family: 'Roboto', sans-serif;
-  padding: 0px;
-  border: 0px solid #2b2d42;
-  border-radius: 0px;
+  text-align: center;
   overflow-wrap: break-word;
   font-size: 65px;
   color: #003049;
-
+  text-align: center;
   overflow: hidden;
   border-right: .1em solid #003049;
   white-space: nowrap;
   width: 0;
   animation: typing 3s forwards;
-  /*      typing 1s steps(20, end) forwards,
-      blink .8s infinite;*/
 }
-
 .menu{
  line-height: 2em;
   grid-row: 1 / 4;
@@ -142,7 +151,7 @@ body{
     width: 195px;
     text-decoration: underline;
     border: 0px;
-    background-color: #edf2f4;
+    background: none;
     /*padding: 14px 28px;*/
     font-size: 80px;
     font-weight: bold;
@@ -151,22 +160,19 @@ body{
     color: #003049;
     cursor: pointer;
     text-align: center;
-    border-radius: 20px;  
-    margin-left:520px;
 
 }
 #nameInput
  {
  Width:500px;
  height:40px;
- margin-left: 358px;
  Color:#003049;
- Background-color:#fcbf49;
+ Background-color:#98c1d9;
  Font-size:50px; 
  padding: 1%;
  border-radius: 20px;
- 
- border-color: #003049;
+ border:0px;
+ border-color: #d1e6f1;
 
  }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -176,10 +182,7 @@ body{
 
  p { margin: 15px }
 
- @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+
 
  .typed-out{
   overflow: hidden;
@@ -188,8 +191,31 @@ body{
   font-size: 1.6rem;
   width: 0;
   animation: typing 1s forwards;
+} 
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 @keyframes blink {
   from { border-color: transparent }
   to { border-color: #003049; }
+}
+
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+    transform: rotateX(40deg);
+  }
+
+  100%{
+    display: none;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

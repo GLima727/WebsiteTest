@@ -75,15 +75,32 @@ function playerStart(){
 function receivePlayerName(){
     gameStart();
     var playerName = document.getElementById("nameInput").value;
-    if(playerName != ""){
+    console.log(playerName.length)
+
+    if(playerName.length > 10){
+
+        document.getElementById("nameInputError").innerHTML = "<l> The name must have 10 characters or less.<l/>";
+    }
+    else if(playerName == "Joe" || playerName == "joe"){
+
+        document.getElementById("nameInputError").innerHTML = "<l> Joe who?<l/>";
+    }
+    else if(playerName == "Joe Mamma" || playerName == "Joe mamma" || playerName == "joe Mamma" || playerName == "joe mamma"){
+
+        document.getElementById("nameInputError").innerHTML = "<l> Joe Mamma who?<l/>";
+    }
+
+    else if(playerName != ""){
         player.name = playerName;
         
-        document.getElementById("menuText").innerHTML = "<p>Player Name: " + player.name + "</p>";
+        document.getElementById("headerMenuText").innerHTML = "<p>Player Name: " + player.name + "</p>";
 
-        document.getElementById("button1").style.display = "none"; /*deletes the buttons */
-        document.getElementById("nameInput").style.display = "none";
+        /*document.getElementById("button1").style.display = "none"; deletes the buttons 
+        document.getElementById("nameInput").style.display = "none";*/
+        document.getElementById("button1").style.animation = document.getElementById("nameInput").style.animation = "fadeOut 700ms forwards";
+        document.getElementById("nameInputError").style.display = "none";
 
-        document.getElementById("gameText").innerHTML = "<l> Welcome <span style='color: #8d99ae;text-decoration:underline;font-weight:bold'>" 
+        document.getElementById("startMenu").innerHTML = "<l> Welcome <span style='color: #8d99ae;text-decoration:underline;font-weight:bold'>" 
                                                         + playerName +"</span>!<br/> Please choose your starter.<l/>"
     }
 }

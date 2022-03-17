@@ -17,27 +17,34 @@
 <body >
    
    <div class="header"> 
-      <div class="headerText"> <p>POKEMON GAME</p></div>
-      <div class="headerMenu"></div>
+      <div class="headerText"> 
+         <p>POKEMON GAME</p>
+      </div>
+         <div class="headerMenu">
+            <p id="headerMenuText"> </p>
+      </div>
    </div>
 
 <div class="container"> 
    <div class="gameBox">
       <div class="gameText">
-         <p id="gameText"> &emsp;&emsp;&emsp;&ensp; Choose your name to start!</p> 
-         
-         <br/>
-         <input type="name" name="name" id="nameInput" class="form__input" placeholder="Enter the Player name"/>
-         <br/>
-         <button onclick="receivePlayerName()" id ="button1" class="button1" >Start</button>
-
+         <div class="startMenu">
+            <p id="startMenu"> Choose your name to start!</p> 
+            
+            <br/>
+            <input type="name" name="name" id="nameInput" class="form__input" placeholder="|"/>
+            <br/>
+            <button onclick="receivePlayerName()" id ="button1" class="button1" >Start</button>
+            <br/>
+            <p id="nameInputError" style="color:#ad2831; text-align: center;"></p>
+         </div>
       </div>
 
    </div>
 
    <div class="menu"> 
       <div class="menuText">
-         <p id="menuText">joe</p>
+         <p id="menuText"></p>
  
       </div>
 
