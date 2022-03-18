@@ -35,9 +35,9 @@ body{
   background-color: #98c1d9;
   border: 10px #003049;
   border-style: solid;
-  border-top-right-radius: 20px;
+
   border-top-left-radius: 20px;
-  position:relative;
+  display: inline-block;
 }
 /*.header:hover{
   transform: scaleY(1.5);
@@ -54,8 +54,9 @@ body{
 #headerMenuText{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 1.9vw;
   color: #003049;
+  white-space: nowrap;
 
 }
 .container {
@@ -123,45 +124,45 @@ body{
   background-color: #98c1d9;
 }
 .menuText{
-  padding: 5px;
+  padding: 1.5vw;
   position: relative; /* moves text up wooow */
   overflow: hidden;
-  bottom: 30px;
+  bottom: 3vw;
   color: #003049;  ;
   font-size: 2vw;
 }
 
 .footer{
  text-align:start;
- line-height: 1.7em;
+ line-height: 1.4em;
  /*font-family:"Lucida Console", Courier, monospace;*/
  font-family: 'Roboto', sans-serif;
- font-size: 1vw;
+ font-size: 1.8vw;
  letter-spacing: normal;
- padding: 20px;
+
  color: #003049;;
  background-color: #fcbf49;
   grid-column: 1 / 13;  /* means column start 3 colum end 4 */
   grid-row: 9;
-  padding: 0px;
+
   border: 0px solid #003049;;
   border-top-right-radius: 20px;
 }
 
 .button1 {
-    width: 1vm;
-    text-decoration: underline;
-    border: 0px;
-    background: none;
-    /*padding: 14px 28px;*/
-    font-size: 4vw;
-    font-weight: bold;
-    /*font-family:"Lucida Console", Courier, monospace;*/
-    font-family: 'Roboto', sans-serif;
-    color: #003049;
-    cursor: pointer;
-    text-align: center;
-    line-height: 0em;
+
+  text-decoration: underline;
+  border: 0px;
+  background: none;
+  /*padding: 14px 28px;*/
+  font-size: 4vw;
+  font-weight: bold;
+  /*font-family:"Lucida Console", Courier, monospace;*/
+  font-family: 'Roboto', sans-serif;
+  color: #003049;
+  cursor: pointer;
+  text-align: center;
+  line-height: 0em;
 }
 #nameInput
  {
@@ -170,17 +171,17 @@ body{
  Color:#003049;
  Background-color:#98c1d9;
  Font-size:4vw; 
- padding: 1%;
+ padding: 1.5%;
  border-radius: 20px;
  border:0px;
  border-color: #d1e6f1;
  line-height: 2em;
 
  }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+/*::placeholder {  Chrome, Firefox, Opera, Safari 10.1+ 
   color: #003049;
-  opacity: 1; /* Firefox */
-}
+  opacity: 1;  Firefox 
+}*/
 
  p { margin: 0vw }
 

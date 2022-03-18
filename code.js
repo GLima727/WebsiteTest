@@ -93,7 +93,7 @@ function receivePlayerName(){
     else if(playerName != ""){
         player.name = playerName;
         
-        document.getElementById("headerMenuText").innerHTML = "<p>Player Name: " + player.name + "</p>";
+        document.getElementById("headerMenuText").innerHTML = "<l>Player Name: <span style='color: #8d99ae;font-size: 1.6vw'>" + player.name + "</l>";
 
         /*document.getElementById("button1").style.display = "none"; deletes the buttons 
         document.getElementById("nameInput").style.display = "none";*/
