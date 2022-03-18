@@ -18,12 +18,14 @@ body{
   color: #d90429;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 140px;
+  font-size: 8vw;
   text-align: justify;
   text-decoration:solid;
   text-decoration: underline overline;
   grid-column: 1 / 13;
   text-align: center;
+  word-wrap: break-word
+  
 }
 .headerMenu{
 
@@ -52,7 +54,7 @@ body{
 #headerMenuText{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 4vw;
   color: #003049;
 
 }
@@ -90,7 +92,7 @@ body{
 .gameText{
   /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
   /*font-family: 'Roboto', sans-serif;*/
-  font-size: 65px;
+  font-size: 2vw;
   color: #003049;
   /*      typing 1s steps(20, end) forwards,
       blink .8s infinite;*/
@@ -99,13 +101,14 @@ body{
   font-family: 'Roboto', sans-serif;
   text-align: center;
   overflow-wrap: break-word;
-  font-size: 65px;
+  font-size: 4.5vw;
+  padding: 0px;
   color: #003049;
   text-align: center;
   overflow: hidden;
   border-right: .1em solid #003049;
   white-space: nowrap;
-  width: 0;
+  line-height: 0.8em;
   animation: typing 3s forwards;
 }
 .menu{
@@ -116,17 +119,16 @@ body{
   padding: 0px;
   border: 10px solid #003049;
 
-  font-size: 26px;
+  font-size: 2vw;
   background-color: #98c1d9;
 }
 .menuText{
-  width: 424px;
   padding: 5px;
-  height: 30vw;
   position: relative; /* moves text up wooow */
+  overflow: hidden;
   bottom: 30px;
   color: #003049;  ;
-  
+  font-size: 2vw;
 }
 
 .footer{
@@ -134,7 +136,7 @@ body{
  line-height: 1.7em;
  /*font-family:"Lucida Console", Courier, monospace;*/
  font-family: 'Roboto', sans-serif;
- font-size: 24px;
+ font-size: 1vw;
  letter-spacing: normal;
  padding: 20px;
  color: #003049;;
@@ -147,31 +149,32 @@ body{
 }
 
 .button1 {
-    width: 195px;
+    width: 1vm;
     text-decoration: underline;
     border: 0px;
     background: none;
     /*padding: 14px 28px;*/
-    font-size: 80px;
+    font-size: 4vw;
     font-weight: bold;
     /*font-family:"Lucida Console", Courier, monospace;*/
     font-family: 'Roboto', sans-serif;
     color: #003049;
     cursor: pointer;
     text-align: center;
-
+    line-height: 0em;
 }
 #nameInput
  {
- Width:500px;
- height:40px;
+ Width:30vw;
+ height:4.5vh;
  Color:#003049;
  Background-color:#98c1d9;
- Font-size:50px; 
+ Font-size:4vw; 
  padding: 1%;
  border-radius: 20px;
  border:0px;
  border-color: #d1e6f1;
+ line-height: 2em;
 
  }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -179,9 +182,9 @@ body{
   opacity: 1; /* Firefox */
 }
 
- p { margin: 15px }
+ p { margin: 0vw }
 
-
+#halfSpacebr {font-size: 200%;}
 
  .typed-out{
   overflow: hidden;
