@@ -78,8 +78,8 @@ function receivePlayerName(){
     console.log(playerName.length)
 
     if(playerName.length > 10){
-
-        document.getElementById("nameInputError").innerHTML = "<l> The name must have 10 characters or less.<l/>";
+        /*document.querySelector(".nameInputError").classList.add('inpErr'); typing animation*/
+        document.getElementById("nameInputError").innerHTML = " The name must have 10 characters or less.";
     }
     else if(playerName == "Joe" || playerName == "joe"){
 
@@ -94,14 +94,13 @@ function receivePlayerName(){
         player.name = playerName;
         
         document.getElementById("headerMenuText").innerHTML = "<l>Player Name: <span style='color: #8d99ae;font-size: 1.6vw'>" + player.name + "</l>";
-
+        document.getElementById('startMenuBox').remove();
+        
         /*document.getElementById("button1").style.display = "none"; deletes the buttons 
-        document.getElementById("nameInput").style.display = "none";*/
+        document.getElementById("nameInput").style.display = "none";
         document.getElementById("button1").style.animation = document.getElementById("nameInput").style.animation = "fadeOut 700ms forwards";
-        document.getElementById("nameInputError").style.display = "none";
+        document.getElementById("nameInputError").style.display = "none";*/
 
-        document.getElementById("startMenu").innerHTML = "<l> Welcome <span style='color: #8d99ae;text-decoration:underline;font-weight:bold'>" 
-                                                        + playerName +"</span>!<br/> Please choose your starter.<l/>"
     }
 }
 const player = new Player();
