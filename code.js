@@ -75,6 +75,7 @@ function playerStart(){
 function receivePlayerName(){
     gameStart();
     var playerName = document.getElementById("nameInput").value;
+    
     console.log(playerName.length)
 
     if(playerName.length > 10){

@@ -5,7 +5,7 @@ var storedItem = localStorage.getItem("storedItem");
 
 
 function revealMessage() {
-    document.getElementById("hiddenMessage").style.display= 'block';
+    document.getElementById("hiddenMessage").style.display = 'block';
 }
 
 function countDown(){
